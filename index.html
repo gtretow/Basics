@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    
+
+    <title>Treino JS vanilla</title>
+  </head>
+  <body>
+    <div class="div1">
+      <nav>
+        <div class="logo">Teste</div>
+        <div class="navlinks">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#"> Pesquisar</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">GitHubAPI</a></li>
+          </ul>
+        </div>
+      </nav>
+      <header style="display: block;">
+        <h1 >Teste JS/CSS/HTML</h1>
+
+        <input id="search-bar" type="search" />
+
+        <button id="btn-search">Pesquisa</button>
+        <small id="error"  style="display: none">Tente novamente</small>
+      </header>
+    </div>
+
+    <!-- USER -->
+
+    <div class="div2" id="user-details" style="display: none;">
+      <img id="user-img" src="" />
+      <h2 id="username"></h2>
+
+      <p>Seguidores:<p id="followers"></p></p>
+      <p>Seguindo:<p id="following"></p></p>
+      <p>E-mail:<p id="email"> </p></p>
+      <p>Descrição:<p id="bio"></p></p>
+
+      <h2>Repositórios</h2>
+      <select name="selection" id="selection">
+        <option id="more-stars" value="more-stars">Mais estrelas</option>
+        <option id="less-stars" value="less-stars">Menos estrelas</option>
+      </select>
+
+      <ol id="repo-list"></ol>
+    </div>
+
+    <!-- Detalhes do Repositório -->
+    <div id="repo-details" class="div3" style="display: none;">
+      <h2>Detalhes</h2>
+      <p >Nome:<p id="repo-name"></p></p>
+      <p >Estrelas:<p id="repo-stars"></p></p>
+      <p>Linguagem utilizada:<p id="repo-language"></p></p>
+      <p >Descrição:<p id="repo-descript"></p></p>
+
+      <a href="" id="back-link">Voltar</a>
+      <a href="" target="_blank" id="access-repo">ver no GitHub</a>
+    </div>
+
+
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
